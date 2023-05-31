@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title> welcom too my site web</title>
+  <link rel="shortcut icon" href="i.jpeg">
+  <style>
+    .menu{
+      color:aliceblue;
+      background-color: red;
+      border: rgb(250, 249, 249)  solid 2px;
+      border-radius: 5px;
+    }
+    img{
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .me{
+      background-color: aqua;
+      border-radius: 5px;
+      border: 1px solid green;
+      border-collapse:unset;
+    }
+    body{
+      background-color:rgba(22, 7, 228, 0.637);
+    }
+    h1,h3{
+      text-align: center;
+    }
+  
+    input{
+      background-color: black;
+      color: aliceblue;
+      border: 0px ;
+      margin-bottom: 5px;
+    }
+    #total{
+      background-color: #f1d42b;
+      padding: 4px;
+    }
+    #total::before{
+      content:' total dh:';
+      
+    }
+    
+     input{
+      height: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #title,#category,#count,#search{ width: 80%;}
+    div{ text-align: center;}
+    #price,#taxes,#discount,#ads{ width: 18%; margin-right: 5px;
+    }
+    
+    #create{ width: 80%; background-color: rgb(0, 130, 17);}
+    #create:hover{ color: orangered;}
+  #serchbytitle,#serchbycategory{ width: 37%; background-color: rgb(0, 130, 7);
+  color: white;
+  height: 30px;
+  border-radius: 5px;
+  border-color: indigo;
+  }
+  #serchbytitle:hover{
+    width: 39%;
+    color: orangered;
+  }
+  #serchbycategory:hover{
+    width: 39%;
+    color: orangered;
+  }
+   #serchbycategory{ margin-left:6% ;} 
+   #delete{ width: 80%; background-color: indigo;}
+   
+   table{ width: 80%;
+   text-align: center;
+  color: rgba(0, 0, 0, 0.993);
+  font-weight: bold;
+  border-collapse: collapse;
+ 
+  }
+  tr{border: 3px indigo solid;
+  margin-top: 5px;
+
+}
+  td{
+    padding: 5px;
+    border: 1px indigo solid;
+  }
+  
+  #input input:hover{
+    width: 85%;
+  }
+ #inputs input:hover{
+    width:20% ;
+  }
+#btn input:hover{ 
+  width:40% ;
+  
+}
+button{
+  border-radius: 5px;
+  background-color:orangered;
+}
+button:hover{
+  background-color: rgb(248, 6, 6,90%);
+  cursor: pointer;
+
+}
+#delete{
+  margin-left: 10%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 30px;
+  display: none;
+}
+#delete input{
+  background-color: indigo;
+  border: none;
+  color: white;
+  width: 100%;
+}
+#delete:hover{
+width: 84%;
+margin-left: 8%;
+background-color: red;
+}
+#bntdeleteall:hover{
+  background-color: red;
+}
+#ptitle{
+  margin-left: 45%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: rgba(255, 0, 0, 0.432);
+  display: none;
+}
+.idnum{
+  color: orangered;
+}
+#colhead{
+  color: orangered;
+}
+#colcontent{
+  color: #213116;
+}
+
+  </style>
+</head>
+<body>
+  <div id="head"> <h1>CRUDS</h1>
+    <h3>PRODUCT MANAGEMENT SYSTEM</h3>
+  </div>
+ <p id="ptitle">* plead  fill in all fields</p>
+
+  <div id="input"> 
+    <input required type="text" onkeyup="reset(this.id)" placeholder="title" id="title">
+    <div id="inputs">
+ 
+      <input required   onkeyup="getotal()" onkeydown="reset(this.id)" type="number"  id="price" placeholder="price">
+ 
+      <input required onkeyup="getotal()"  type="number"onkeydown="reset(this.id)"  id="taxes" placeholder="taxes">
+
+      <input required onkeyup="getotal()" type="number" onkeydown="reset(this.id)" id="ads" placeholder="ads">
+
+
+      <input  required onkeyup="getotal()" onkeydown="reset(this.id)" type="number"  id="discount" placeholder="discount">
+      <small required onkeyup="getotal()" onkeyup="reset(this.id)" id="total"></small></div>
+    <input required type="number" id="count" onkeyup="reset(this.id)" placeholder="count">
+    <input required type="text" id="category" onkeyup="reset(this.id)" placeholder="category">
+    <input onclick="gecreate()" type="submit" id="create" value="create">
+    <input  type="search"  id="search"onkeyup=" searchdata(this.value)" placeholder="search">
+   <div id="btn"> <button onclick="getsearchmood(this.id)" type="submit" id="serchbytitle"  value="title"> Search by Title</button><button onclick="getsearchmood(this.id)" type="submit" id="serchbycategory" value="category">Search By Category</button>
+    </div><br><div id="delete"><input onclick="deletall()" type="submit" id="bntdeleteall"  value="DELET ALL"></div>
+  </div>
+  <div id="table"> 
+    <center><table >
+       <thead><tr ><th id="colhead">ID</th>
+         <td id="colhead" >TITLE </td> 
+         <td id="colhead">PRICE</td> 
+         <td id="colhead">TAXES</td>
+          <td id="colhead">ADS</td> 
+          <td id="colhead">DISCOUNT</td> 
+          <td id="colhead"> TOTALE</td>
+           <td id="colhead"> CATEGORY </td>
+            <td id="colhead"> UPDATE</td> 
+            <td id="colhead"> DELETE</td></tr></thead>
+            <tbody id="tbody">
+              
+
+
+
+
+            </tbody>
+    </table></center>
+  </div>
+  <script src="styles.js"></script>
+</body>
+</html>

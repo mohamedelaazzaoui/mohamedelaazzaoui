@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> welcom too my site web</title>
+    <link rel="shortcut icon" href="i.jpeg">
+    <style>
+        body {
+            background-color: rgb(18, 18, 52);
+            transition: all 2s;
+                }
+         span{display: none;}
+
+        #media {
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 0px;
+            float: left;
+           
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            margin-left: 15%;
+        }
+
+        button {
+            border:none;
+            border-radius: 100px;
+            background-color: rgb(106, 106, 140);
+            padding: 5px;
+            padding-right: 10px;
+            transition: flex 0.5s;
+            margin: 5px;
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+       
+        }
+        .gmail:hover {
+            flex-grow: 1;
+            padding-left: 10px;
+            background-color: white;
+        }
+        button:hover img {
+            animation: slidein 0.5s;
+        }
+        .instagram:hover {
+            flex-grow:1;
+            padding-left: 10px;
+            background-color: black;
+             color: white;
+             
+
+        }
+        button:hover{
+            cursor:pointer;
+        
+        }
+       button:hover span {
+           
+            font-size: x-large;
+            margin-left: 10px;
+            font-weight: 400;
+            font-family:   Verdana, Arial, Helvetica, sans-serif;
+            display: inline;
+            animation: slidein 0.5s;
+            
+        }
+        @keyframes slidein {
+            from{
+    
+                margin-left:100%;
+            }
+            to {
+               
+                margin-left: 0%;
+            }
+        }
+        .twitter:hover {
+            flex-grow:1;
+            text-align: left;
+            padding-left: 10px;
+            background-color: lightcyan;
+        }
+
+        .snapchat:hover {
+            flex-grow:1;
+            text-align: left;
+            padding-left: 10px;
+            background-color: lightyellow;
+        }
+
+        .whatsapp:hover {
+            flex-grow:1;
+            text-align: left;
+            padding-left: 10px;
+            background-color: lightgreen;
+        }
+
+        .facebook:hover {
+            flex-grow:1;
+            text-align: left;
+            padding-left: 10px;
+            background-color: lightskyblue;}
+            legend{
+                background-color: darkkhaki;
+                color:orangered;
+                text-align: center;
+                border-radius: 5px;
+            }
+            fieldset{
+                width:40%;
+                height: 260px;
+                
+                text-align: center;
+                margin-left: 30%;
+              background-color: black;
+              border-radius: 20px;
+              border-top-right-radius: 80px;
+              border-bottom-left-radius: 80px;
+              border: 1px blue solid;
+
+            }
+           
+            input{
+                border-radius: 5px;
+                margin-top: 10px;
+               
+               
+            }
+            input:hover{
+                width: 190px;
+                border : 1px aqua solid;
+                border: 1px blue solid;
+            }
+            label{
+                background-color: rgb(221, 226, 172);
+                border-radius: 5px;
+               margin-left: 0;
+               
+            }
+            #enter{
+                width: 150px;
+                height:30px;
+                background-color: blueviolet;
+                border: 1px blue solid;
+                margin-top: 30px;
+            }
+            #enter:hover{
+                background-color:green;
+                width: 160px;
+            }
+            .label{
+                float: left; 
+                margin-top: 10px;
+                width:100px;
+                text-align: left;
+            }
+            .input{
+                
+              margin-left: 40px;
+            }
+            #form1{
+                display: none;
+            }
+            #form2{
+                display: block; 
+            }
+            #vemail{
+                margin-top:30PX;
+               
+            }
+            .vemail{
+                float: left; 
+                margin-top: 30PX;
+                width:100px;
+                text-align: left;
+                margin-left: 70px;
+                
+            }
+            #vmodpass{
+         margin-top: 10PX; 
+        
+        }
+            .vmodpass{
+                float: left; 
+                width:100px;
+                text-align: left;
+                margin-top: 10PX;
+                margin-left: 70px;
+            }
+            #venter{
+              width: 100px;
+              height: 30px;
+              background-color: blueviolet;
+              border: 1px blue solid;
+            margin-top: 20px;
+            }
+            #venter:hover{
+                background-color:green;
+                width: 160px;
+            }
+            #vfieldset{
+                border-radius: 100px;
+                background-color:black;
+                width: 50%;
+            }
+            .img1{
+                width:80px ;
+                height:80px ;
+                margin-right: 17%;
+            }
+            #a{
+                color: blue;
+            }
+            
+            p{
+                color: white;
+                margin-top: 5px;
+            }
+            .delet{
+                margin-left: 40px;
+                display: none;
+            }
+            #ptitle{
+                display:none;
+                color: red;
+            }
+           #cwhat{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 60px;
+            display: none;
+           }
+           .what{
+            width: 200px;
+            height: 200px;
+           }
+     #cinst{
+        margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 60px;
+            display: none;}
+
+     #cgm{
+         margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 60px;
+            display: none;
+     }
+    </style>
+    
+    
+</head>
+    
+<body> <div id="media">   
+        <button id="1" class="instagram" onmouseover="bdl('black');" onmousemove="cood(this.value)" value="instagram" onmouseout="bdl('rgb(18, 18, 52)');" onclick="window.location.href='https://instagram.com/mohamed99_____?igshid=ZDdkNTZiNTM='"><img src="instagram.png"><span> Instagram</span></button>
+        <div id="cinst"> <img src="inst.jpeg" class="what"> </div>
+        <button class="twitter"  onmouseover="bdl('lightcyan');" onmouseout="bdl('rgb(18, 18, 52)');" onclick="window.location.href='https://www.twitter.com/'"><img src="twitter.png"><span>Twitter</span></button>
+        <button class="snapchat"  onmouseover="bdl('lightyellow');" onmouseout="bdl('rgb(18, 18, 52)');" onclick="window.location.href='https://www.snapchat.com/'"><img src="snapchat.png"><span>Snapchat</span></button>
+        <button class="gmail"  onmouseover="bdl('white');" onmousemove="cood(this.value)" value="gmail" onmouseout="bdl('rgb(18, 18, 52)');" onclick="window.location.href='https://me-qr.com/oQeDSTvb'"><img src="gmail.png"><span>Gmail</span></button>
+        <div id="cgm"> <img src="gm.jpeg" class="what"> </div>
+        <button class="whatsapp"  onmouseover="bdl('lightgreen');" onmousemove="cood(this.value)" value="whatsapp" onmouseout="bdl('rgb(18, 18, 52)');" onclick="window.location.href='https://wa.me/qr/OLK26WCB6T5LD1'"><img src="whatsapp.png"><span>Whatsapp</span> </button>
+        <div id="cwhat"> <img src="what.jpeg" class="what"> </div>
+        <button class="facebook"  onmouseover="bdl('lightskyblue');"  onmouseout="bdl('rgb(18, 18, 52)');" onclick="window.location.href='https://www.facebook.com/'"><img src="facebook.png"><span>Facebook</span></button>
+        
+    </div>
+    <div id="form1">
+    <form method="post" >
+        <fieldset>
+            <legend id="legend">BONJOUR </legend>
+            <p id="ptitle">* plead  fill in all fields</p>
+<div class="label">  <label >nom :</label> </div><div class="input"> <input  type="text"  id="nom" placeholder="nom" ></div>
+<div class="label" >  <label >PRENOM :</label> </div><div class="input"> <input type="text"  onkeyup="add(this.value)" onkeydown=" ptrie(this.value)" id="prenom" placeholder=" PRENOM "></div>
+<div class="label"><label >EMAIL:</label> </div> <div class="input" ><input type="email" id="email" onkeydown=" etrie(this.value)" placeholder=" email@gmail.com " ></div>
+<div class="label"> <label >MOD PASS:</label> </div > <div class="input"> <input type="password"   id="modpass" placeholder=" MOD PASS"></div>
+<div class="label"><label > TEL:</label> </div><div class="input"> <input type="tel" id="tel" onkeydown=" ttrie(this.value)"   placeholder=" TEL " ></div>
+<input type="button" id="enter" onmouseout="msg()" value="ENTER">
+<div class="delet"><button id="delet" onmouseover="deletall()">delet</button></div>
+            
+        </fieldset>
+
+        
+    </form></div>
+
+    <div id="form2"><form action="" method="post">
+     <fieldset id="vfieldset">
+
+<div><img src="logo2.jpg" class="img1" ></div>
+<div class="vemail"><label >EMAIL:</label> </div> <div class="input" ><input type="email" id="vemail" onkeydown=" msg2(this.value)" placeholder=" email@gmail.com " ></div>
+<div class="vmodpass"> <label >MOD PASS:</label> </div > <div class="input"> <input type="password" onkeydown=" msg3(this.value)"  id="vmodpass" placeholder=" MOD PASS"></div>
+ <a href="entete.html"><input type="button" value="ENTER" id="venter"  > </a>
+<p> vous n'avez pas encore de compte?<a href="" id="a" onmouseout="inscrire()" >S'inscrire</a></p>
+     </fieldset>
+
+
+
+
+    </form></div>
+    
+    <script>
+        let nom = document.getElementById('nom');
+        let prenom = document.getElementById('prenom');
+        let email = document.getElementById('email');
+        let password = document.getElementById('modpass');
+        let tel = document.getElementById('tel');
+        let datauser=[];
+        let legend=document.getElementById('legend');
+        let vemail = document.getElementById('vemail');
+        let vpassword = document.getElementById('vmodpass');
+        let a = document.getElementById('a');
+        let form2=document.getElementById('form2');
+        let form1=document.getElementById('form1');
+        let mode='v';
+        let cwhat=document.getElementById('cwhat');
+        let cinst=document.getElementById('cinst');
+        let cgm=document.getElementById('cgm');
+        let x='false';
+function cood(value){
+     x=value;
+     if (x=='instagram') {
+        cwhat.style.cssText='display:none;';
+        cinst.style.cssText='display:block;';
+        cgm.style.cssText='display:none;';
+     }
+     if( x=='whatsapp'){
+        cwhat.style.cssText='display:block;';
+        cinst.style.cssText='display:none;';
+        cgm.style.cssText='display:none;';
+     }
+     if( x=='gmail'){
+        cwhat.style.cssText='display:none;';
+        cinst.style.cssText='display:none;';
+        cgm.style.cssText='display:block;';
+     }
+  
+}
+        
+function msg(){
+              let user = {nom:nom.value.toLowerCase(),
+                prenom:prenom.value.toLowerCase(),
+                email:email.value.toLowerCase(),
+                password:password.value,
+                tel:tel.value,
+              }
+
+
+    
+    if (prenom.value.length <= 0){
+        
+        alert("pleas prenom this field ");
+        prenom.style.cssText='border: 1px red solid';
+        ptitle.style.cssText='display:block;';
+        mode='f';
+
+    }else{
+        prenom.style.cssText='border: 0px balck solid';
+        ptitle.style.cssText='display:none;';
+        mode='v';
+    }
+              
+              if(localStorage.users != null){
+                datauser = JSON.parse(localStorage.users)
+                if (mode !='f') {
+                datauser.push(user);
+                clear();
+            }
+              localStorage.setItem('users',JSON.stringify(datauser));
+                }else{
+               datauser=[]
+               datauser.push(user);
+              localStorage.setItem('users',JSON.stringify(datauser));
+                }
+                form2.style.cssText='display: block;'
+                form1.style.cssText='display: none;'
+                vemail.value = email.value;
+                vpassword.value=password.value;
+                
+            }
+function deletall(){
+        localStorage.clear();
+        datauser.splice(0);
+       
+       }
+ function clear(){
+    nom.value='';
+    prenom.value='';
+    email.value='';
+    password.value='';
+    tel.value='';
+    legend.innerHTML='BONJOUR';
+    legend.style.cssText='background-color: darkkhaki;'
+    
+}
+
+
+function ptrie(value){
+    let i;
+    let text1 = value;
+let text2 ;
+let result ;
+    for( i=0 ;i< datauser.length;i++){
+        text2= datauser[i].prenom;
+        result = text1.localeCompare(text2);
+        if( result == '-1' ){
+        prenom.style.cssText='border: 1px red solid';
+       }else{
+        prenom.style.cssText='border: 1px black solid';
+       }
+    }
+}
+function etrie(value){
+    let i;
+    let text1 = value;
+let text2 ;
+let result ;
+    for( i=0 ;i< datauser.length;i++){
+        text2= datauser[i].email;
+        
+        result = text1.localeCompare(text2);
+        if( result == '-1' ){
+        email.style.cssText='border: 1px red solid';
+       }else{
+        email.style.cssText='border: 1px blue solid';
+       }
+    }
+}
+function ttrie(value){
+    let i;
+    let text1 = value;
+let text2 ;
+let result ;
+    for( i=0 ;i< datauser.length;i++){
+        text2= datauser[i].tel;
+        
+        result = text1.localeCompare(text2);
+        if( result == '-1' ){
+        tel.style.cssText='border: 1px red solid';
+       }else{
+        tel.style.cssText='border: 1px black solid';
+       }
+
+    }
+}
+function add(value){
+    
+    if(value.length > 0){
+legend.innerHTML= 'BONJOUR   '+value.toUpperCase()+'';
+legend.style.cssText='background-color: blue;'
+}else{
+    legend.innerHTML= 'BONJOUR   '
+    legend.style.cssText='background-color: darkkhaki;'
+}
+
+}
+function msg2(value){
+    let i;
+    let text1 = value;
+let text2 ;
+let result ;
+datauser = JSON.parse(localStorage.users);
+console.log(datauser.length);
+for (let i = 0; i < datauser.length; i++) {
+    text2= datauser[i].email;
+        
+        result = text1.localeCompare(text2);
+        if( result == '-1' ){
+        vemail.style.cssText='border: 1px red solid';
+        
+       }else{
+        vemail.style.cssText='border: 1px blue solid';
+        
+       }
+       x=i;
+}
+}
+
+function msg3(value){
+    let i;
+    let text1 = value;
+let text2 ;
+let result ;
+datauser = JSON.parse(localStorage.users);
+console.log(datauser.length);
+for (let i = 0; i < datauser.length; i++) {
+    text2= datauser[i].email;
+        
+        result = text1.localeCompare(text2);
+        if( result == '-1' ){
+        vemail.style.cssText='border: 1px blue solid';
+        
+       }else{
+        vemail.style.cssText='border: 1px red solid';
+        
+       }
+    
+}
+}
+function inscrire(){
+form2.style.cssText='display: none;'
+form1.style.cssText='display: block;'
+
+
+}
+        
+function bdl(color){
+    document.body.style.background=color;
+    
+        cwhat.style.cssText='display:none;';
+        cinst.style.cssText='display:none;';
+        cgm.style.cssText='display:none;';
+
+      }
+
+</script>
+</body>
+
+</html>
